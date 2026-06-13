@@ -1,3 +1,64 @@
+.margin-bottom-sm {
+    margin-bottom: 0.75rem;
+}
+
+.cpu-center-subtext {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+
+/* Estrutura Geral da Linha do Tempo */
+.timeline-section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 2.5rem;
+    align-items: flex-start;
+}
+
+/* Estilização dos Números Grandes em Vermelho Netflix */
+.timeline-num {
+    font-family: 'Urbanist', 'Impact', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #E50914;
+    line-height: 1;
+    margin-right: 2rem;
+    min-width: 70px;
+}
+
+/* Bloco de Conteúdo de cada Passo */
+.timeline-content h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: #b3b3b3;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Termos técnicos discretos em cinza ao lado do título */
+.tech-term {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
