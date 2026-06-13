@@ -1,421 +1,493 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <!-- Conecta o CSS -->
   <link rel="stylesheet" href="netflix-styles.css">
 </head>
+
 <body>
-<!-- HERO -->
-<section class="hero" id="topo">
-  <div class="hero-badge">Infoproduto · Introdução à Computação</div>
-  <div class="hero-logo">Netflix</div>
-  <div class="hero-subtitle">Análise Computacional do Sistema</div>
-  <p class="hero-desc">
-    Uma análise técnica do maior serviço de streaming do mundo — sob a perspectiva de hardware, software, dados e linguagens de programação.
-  </p>
-  <nav class="hero-nav">
-    <a href="#apresentacao">Apresentação</a>
-    <a href="#tecnologias">Tecnologias</a>
-    <a href="#funcionamento">Funcionamento</a>
-    <a href="#dados">Dados</a>
-    <a href="#requisitos">Requisitos</a>
-    <a href="#referencias">Referências</a>
-  </nav>
-  <div class="scroll-hint">↓ role para explorar</div>
-</section>
-
-<hr class="divider">
-
-<!-- APRESENTAÇÃO -->
-<section id="apresentacao">
-  <div class="reveal">
-    <div class="section-label">01 — Apresentação</div>
-    <h2 class="section-title">O que é<br>a Netflix?</h2>
-    <p class="section-body">
-      Fundada em 1997 por Reed Hastings e Marc Randolph, a Netflix é uma plataforma de streaming de vídeo sob demanda (SVOD) que opera em mais de 190 países. Permite ao usuário assistir filmes, séries, documentários e conteúdos originais a qualquer hora, em qualquer dispositivo com conexão à internet, mediante assinatura mensal.
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="hero-badge">Infoproduto · Introdução à Computação</div>
+    <div class="hero-logo">Netflix</div>
+    <div class="hero-subtitle">Análise Computacional do Sistema</div>
+    <p class="hero-desc">
+      Uma análise técnica do maior serviço de streaming do mundo — sob a perspectiva de hardware, software, dados e
+      linguagens de programação.
     </p>
-  </div>
+    <nav class="hero-nav">
+      <a href="#apresentacao">Apresentação</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#funcionamento">Funcionamento</a>
+      <a href="#dados">Dados</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="#referencias">Referências</a>
+    </nav>
+    <div class="scroll-hint">↓ role para explorar</div>
+  </section>
 
-  <div class="stats-row reveal">
-    <div class="stat-box">
-      <div class="stat-num">+300M</div>
-      <div class="stat-label">Assinantes ativos</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">+190</div>
-      <div class="stat-label">Países</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">+9K</div>
-      <div class="stat-label">Títulos no catálogo</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">+40</div>
-      <div class="stat-label">Idiomas</div>
-    </div>
-  </div>
+  <hr class="divider">
 
-  <div class="app-grid reveal">
-    <div class="app-card">
-      <div class="app-card-title">1. Finalidade e Modelo de Negócio</div>
-      <div class="app-card-value">Plataforma de streaming de vídeo sob demanda (Over-The-Top / OTT) operada via modelo de assinatura (SVOD). O catálogo é composto por uma estratégia híbrida de licenciamento de estúdios terceiros e produções originais em escala global.</div>
+  <!-- APRESENTAÇÃO -->
+  <section id="apresentacao">
+    <div class="reveal">
+      <div class="section-label">01 — Apresentação</div>
+      <h2 class="section-title">O que é<br>a Netflix?</h2>
+      <p class="section-body">
+        Fundada em 1997 por Reed Hastings e Marc Randolph, a Netflix é uma plataforma de streaming de vídeo sob demanda
+        (SVOD) que opera em mais de 190 países. Permite ao usuário assistir filmes, séries, documentários e conteúdos
+        originais a qualquer hora, em qualquer dispositivo com conexão à internet, mediante assinatura mensal.
+      </p>
     </div>
-    <div class="app-card">
-      <div class="app-card-title">2. Público-Alvo e Segmentação</div>
-      <div class="app-card-value">Consumidores de entretenimento digital de perfil demográfico amplo (todas as idades), segmentados globalmente por meio de preferências comportamentais e hábitos de consumo, independentemente da localização geográfica.</div>
-    </div>
-    <div class="app-card">
-      <div class="app-card-title">3. Ecossistema de Aplicação</div>
-      <div class="app-card-value">Plataforma híbrida: web (SPA), mobile (iOS/Android), desktop, smart TV e consoles</div>
-    </div>
-    <div class="app-card">
-      <div class="app-card-title">4. Funcionalidades Principais</div>
-      <div class="app-card-value">Catálogo, recomendações por IA, perfis múltiplos, download offline, streaming adaptativo</div>
-    </div>
-  </div>
-</section>
 
-<hr class="divider">
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <div class="stat-num">+300M</div>
+        <div class="stat-label">Assinantes ativos</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">+190</div>
+        <div class="stat-label">Países</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">+9K</div>
+        <div class="stat-label">Títulos no catálogo</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">+40</div>
+        <div class="stat-label">Idiomas</div>
+      </div>
+    </div>
 
-<!-- TECNOLOGIAS -->
-<section id="tecnologias">
-  <div class="reveal">
-    <div class="section-label">02 — Stack Tecnológico</div>
-    <h2 class="section-title">Tecnologias<br>Utilizadas</h2>
-    <p class="section-body">
-      A Netflix opera uma das infraestruturas mais robustas e escaláveis do mundo. Sua arquitetura é amplamente baseada em microsserviços, projetada para alta disponibilidade, tolerância a falhas e entrega de vídeo de ultra-alta definição.
-    </p>
-  </div>
+    <div class="app-grid reveal">
+      <div class="app-card">
+        <div class="app-card-title">1. Finalidade e Modelo de Negócio</div>
+        <div class="app-card-value">Plataforma de streaming de vídeo sob demanda (Over-The-Top / OTT) operada via modelo
+          de assinatura (SVOD). O catálogo é composto por uma estratégia híbrida de licenciamento de estúdios terceiros
+          e produções originais em escala global.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-card-title">2. Público-Alvo e Segmentação</div>
+        <div class="app-card-value">Consumidores de entretenimento digital de perfil demográfico amplo (todas as
+          idades), segmentados globalmente por meio de preferências comportamentais e hábitos de consumo,
+          independentemente da localização geográfica.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-card-title">3. Ecossistema de Aplicação</div>
+        <div class="app-card-value">Plataforma híbrida: web (SPA), mobile (iOS/Android), desktop, smart TV e consoles
+        </div>
+      </div>
+      <div class="app-card">
+        <div class="app-card-title">4. Funcionalidades Principais</div>
+        <div class="app-card-value">Catálogo, recomendações por IA, perfis múltiplos, download offline, streaming
+          adaptativo</div>
+      </div>
+    </div>
+  </section>
 
-  <div class="tech-section reveal">
-    <div class="tech-row">
-      <div class="tech-category">Linguagens de programação</div>
-      <div class="tech-tags">
-        <span class="tag tag-red">Java</span>
-        <span class="tag tag-red">Python</span>
-        <span class="tag tag-red">JavaScript / Node.js</span>
-        <span class="tag tag-white">Kotlin</span>
-        <span class="tag tag-white">Swift</span>
-        <span class="tag tag-white">C++</span>
-        <span class="tag tag-dim">Scala</span>
-      </div>
-    </div>
-    <div class="tech-row">
-      <div class="tech-category">Frameworks e bibliotecas</div>
-      <div class="tech-tags">
-        <span class="tag tag-red">React</span>
-        <span class="tag tag-white">Spring Boot</span>
-        <span class="tag tag-white">gRPC</span>
-        <span class="tag tag-white">GraphQL</span>
-        <span class="tag tag-dim">TensorFlow</span>
-        <span class="tag tag-dim">Apache Spark</span>
-      </div>
-    </div>
-    <div class="tech-row">
-      <div class="tech-category">Banco de dados</div>
-      <div class="tech-tags">
-        <span class="tag tag-red">MySQL (CockroachDB)</span>
-        <span class="tag tag-white">Apache Cassandra</span>
-        <span class="tag tag-white">ElasticSearch</span>
-        <span class="tag tag-dim">Redis (cache)</span>
-        <span class="tag tag-dim">S3 (vídeos)</span>
-      </div>
-    </div>
-    <div class="tech-row">
-      <div class="tech-category">Infraestrutura / Nuvem</div>
-      <div class="tech-tags">
-        <span class="tag tag-red">Amazon Web Services (AWS)</span>
-        <span class="tag tag-white">Open Connect CDN</span>
-        <span class="tag tag-white">Kubernetes</span>
-        <span class="tag tag-dim">Docker</span>
-        <span class="tag tag-dim">Zuul API Gateway</span>
-      </div>
-    </div>
-    <div class="tech-row">
-      <div class="tech-category">Protocolos de streaming</div>
-      <div class="tech-tags">
-        <span class="tag tag-red">DASH (Dynamic Adaptive Streaming)</span>
-        <span class="tag tag-white">HLS</span>
-        <span class="tag tag-white">HTTPS/TLS 1.3</span>
-        <span class="tag tag-dim">WebSocket</span>
-      </div>
-    </div>
-    <div class="tech-row">
-      <div class="tech-category">Codec de vídeo</div>
-      <div class="tech-tags">
-        <span class="tag tag-red">AV1</span>
-        <span class="tag tag-white">H.264 (AVC)</span>
-        <span class="tag tag-white">H.265 (HEVC)</span>
-        <span class="tag tag-dim">VP9</span>
-      </div>
-    </div>
-  </div>
-</section>
+  <hr class="divider">
 
-<hr class="divider">
+  <!-- TECNOLOGIAS -->
+  <section id="tecnologias">
+    <div class="reveal">
+      <div class="section-label">02 — Stack Tecnológico</div>
+      <h2 class="section-title">Tecnologias<br>Utilizadas</h2>
+      <p class="section-body">
+        A Netflix opera uma das infraestruturas mais robustas e escaláveis do mundo. Sua arquitetura é amplamente
+        baseada em microsserviços, projetada para alta disponibilidade, tolerância a falhas e entrega de vídeo de
+        ultra-alta definição.
+      </p>
+    </div>
 
-<!-- FUNCIONAMENTO -->
-<section id="funcionamento">
-  <div class="reveal">
-    <div class="section-label">03 — Funcionamento</div>
-    <h2 class="section-title">Como o<br>Sistema Opera</h2>
-    <p class="section-body">
-      Da pressão de "play" pelo usuário até os pixels exibidos na tela, o sistema da Netflix executa uma complexa cadeia de operações distribuídas, envolvendo múltiplos processadores, memória, rede e armazenamento massivo.
-    </p>
-  </div>
+    <div class="tech-section reveal">
+      <div class="tech-row">
+        <div class="tech-category">Linguagens de programação</div>
+        <div class="tech-tags">
+          <span class="tag tag-red">Java</span>
+          <span class="tag tag-red">Python</span>
+          <span class="tag tag-red">JavaScript / Node.js</span>
+          <span class="tag tag-white">Kotlin</span>
+          <span class="tag tag-white">Swift</span>
+          <span class="tag tag-white">C++</span>
+          <span class="tag tag-dim">Scala</span>
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-category">Frameworks e bibliotecas</div>
+        <div class="tech-tags">
+          <span class="tag tag-red">React</span>
+          <span class="tag tag-white">Spring Boot</span>
+          <span class="tag tag-white">gRPC</span>
+          <span class="tag tag-white">GraphQL</span>
+          <span class="tag tag-dim">TensorFlow</span>
+          <span class="tag tag-dim">Apache Spark</span>
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-category">Banco de dados</div>
+        <div class="tech-tags">
+          <span class="tag tag-red">MySQL / CockroachDB</span>
+          <span class="tag tag-white">Apache Cassandra</span>
+          <span class="tag tag-white">ElasticSearch</span>
+          <span class="tag tag-dim">Redis (cache)</span>
+          <span class="tag tag-dim">S3 (vídeos)</span>
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-category">Infraestrutura / Nuvem</div>
+        <div class="tech-tags">
+          <span class="tag tag-red">Amazon Web Services (AWS)</span>
+          <span class="tag tag-white">Open Connect CDN</span>
+          <span class="tag tag-white">Kubernetes</span>
+          <span class="tag tag-dim">Docker</span>
+          <span class="tag tag-dim">Titus</span>
+          <span class="tag tag-dim">Zuul API Gateway</span>
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-category">Protocolos de streaming</div>
+        <div class="tech-tags">
+          <span class="tag tag-red">DASH (Dynamic Adaptive Streaming)</span>
+          <span class="tag tag-white">HLS</span>
+          <span class="tag tag-white">HTTPS/TLS 1.3</span>
+          <span class="tag tag-dim">WebSocket</span>
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-category">Codec de vídeo</div>
+        <div class="tech-tags">
+          <span class="tag tag-red">AV1</span>
+          <span class="tag tag-white">H.264 (AVC)</span>
+          <span class="tag tag-white">H.265 (HEVC)</span>
+          <span class="tag tag-dim">VP9</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- CPU/Memória diagram -->
-  <div class="cpu-diagram reveal">
-    <div>
-      <div class="cpu-box" style="margin-bottom:0.75rem">
-        <div class="cpu-box-title">Entrada (Input)</div>
-        <div class="cpu-box-sub">Clique no título, busca por texto, scroll no catálogo — capturados via teclado/mouse/touch e enviados via HTTPS</div>
-      </div>
-      <div class="cpu-box">
-        <div class="cpu-box-title">Memória RAM</div>
-        <div class="cpu-box-sub">Buffer de vídeo pré-carregado (30s à frente), cache de interface, estado da sessão do usuário</div>
-      </div>
-    </div>
-    <div class="cpu-center">
-      <span class="arrow">→</span>
-      <span class="cpu-center-label">CPU<br>+<br>GPU</span>
-      <span class="arrow">→</span>
-      <br><span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase">Decodificação<br>de vídeo e<br>renderização</span>
-    </div>
-    <div>
-      <div class="cpu-box" style="margin-bottom:0.75rem">
-        <div class="cpu-box-title">Saída (Output)</div>
-        <div class="cpu-box-sub">Vídeo decodificado exibido na tela, áudio via hardware de som, legenda sobreposta</div>
-      </div>
-      <div class="cpu-box">
-        <div class="cpu-box-title">Armazenamento (E/S)</div>
-        <div class="cpu-box-sub">Leitura de cache local (download offline via DRM), escrita de logs de telemetria</div>
-      </div>
-    </div>
-  </div>
+  <hr class="divider">
 
-  <div class="flow reveal" style="margin-top:2rem">
-    <div class="flow-step">
-      <div class="flow-num">01</div>
-      <div class="flow-content">
-        <h3>Interação do usuário → API Gateway</h3>
-        <p>O usuário pressiona <strong>play</strong>. O cliente (navegador ou app) envia uma requisição HTTPS ao API Gateway da Netflix (Zuul), que autentica o token JWT do usuário e roteia a chamada para o microsserviço correto.</p>
-      </div>
+  <!-- FUNCIONAMENTO -->
+  <section id="funcionamento">
+    <div class="reveal">
+      <div class="section-label">03 — Funcionamento</div>
+      <h2 class="section-title">Como o<br>Sistema Opera</h2>
+      <p class="section-body">
+        Da pressão de "play" pelo usuário até os pixels exibidos na tela, o sistema da Netflix executa uma engrenagem
+        inteligente que une o poder dos componentes do seu aparelho à velocidade da rede.
+      </p>
     </div>
-    <div class="flow-step">
-      <div class="flow-num">02</div>
-      <div class="flow-content">
-        <h3>Microsserviço de Playback</h3>
-        <p>O serviço de playback consulta o banco de dados de licenças (DRM), verifica o plano do assinante, seleciona o <strong>servidor CDN Open Connect mais próximo</strong> (baseado em geolocalização por IP) e retorna uma lista de URLs de segmentos de vídeo.</p>
-      </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-num">03</div>
-      <div class="flow-content">
-        <h3>Streaming Adaptativo (DASH/HLS)</h3>
-        <p>O cliente analisa a largura de banda disponível em tempo real. Um algoritmo ABR (Adaptive Bitrate) seleciona automaticamente entre múltiplas qualidades (<strong>360p, 720p, 1080p, 4K</strong>). O vídeo é dividido em segmentos de ~4 segundos, baixados sequencialmente e colocados em buffer na RAM.</p>
 
-        <div class="code-block">
-<span class="cm">// Exemplo simplificado de seleção de qualidade ABR</span>
-<span class="kw">function</span> selecionarQualidade(bandwidth) {
-  <span class="kw">if</span> (bandwidth &gt; <span class="num">15_000</span>) <span class="kw">return</span> <span class="str">"4K_UHD"</span>;
-  <span class="kw">if</span> (bandwidth &gt; <span class="num">5_000</span>)  <span class="kw">return</span> <span class="str">"1080p_FHD"</span>;
-  <span class="kw">if</span> (bandwidth &gt; <span class="num">3_000</span>)  <span class="kw">return</span> <span class="str">"720p_HD"</span>;
-  <span class="kw">return</span> <span class="str">"360p_SD"</span>;  <span class="cm">// fallback</span>
-}</div>
+    <!-- CPU/Memória diagram -->
+    <div class="cpu-diagram reveal">
+      <div>
+        <div class="cpu-box margin-bottom-sm">
+          <div class="cpu-box-title">Aperte o Play</div>
+          <div class="cpu-box-sub">Quando você clica em um filme ou digita na busca, seu aparelho envia um comando
+            digital seguro (via HTTPS).</div>
+        </div>
+        <div class="cpu-box">
+          <div class="cpu-box-title">A Zona de Segurança (Buffer)</div>
+          <div class="cpu-box-sub">A memória RAM guarda até 30 segundos de filme à frente na fila. Se a sua internet
+            oscilar, o filme continua rodando sem travar direto da RAM.</div>
+        </div>
       </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-num">04</div>
-      <div class="flow-content">
-        <h3>Decodificação pelo processador</h3>
-        <p>Os segmentos chegam comprimidos no codec <strong>AV1 ou H.265</strong>. O processador (CPU) ou, preferencialmente, a <strong>GPU do dispositivo</strong> realiza a decodificação por hardware, convertendo dados binários comprimidos em frames de imagem. Isso economiza energia e permite reprodução em 4K em dispositivos móveis.</p>
-      </div>
-    </div>
-    <div class="flow-step">
-      <div class="flow-num">05</div>
-      <div class="flow-content">
-        <h3>Telemetria e recomendação</h3>
-        <p>Simultaneamente, o cliente envia dados de comportamento ao servidor (<strong>quanto assistiu, pausou, rebobinou</strong>). Esses dados alimentam o sistema de recomendação baseado em machine learning, que usa Apache Spark e TensorFlow para ajustar o catálogo personalizado do usuário.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<hr class="divider">
-
-<!-- DADOS -->
-<section id="dados">
-  <div class="reveal">
-    <div class="section-label">04 — Representação e Tipos de Dados</div>
-    <h2 class="section-title">Como os<br>Dados São<br>Tratados</h2>
-    <p class="section-body">
-      A Netflix lida com tipos de dados radicalmente diferentes — de bytes de vídeo comprimido a registros JSON de perfil de usuário — cada um com formato e motivação técnica específica.
-    </p>
-  </div>
-
-  <div class="data-grid reveal">
-    <div class="data-card">
-      <div class="data-card-header">
-        <div class="data-type-label">Vídeo</div>
-        <div class="data-format">Binário / AV1</div>
-      </div>
-      <div class="data-name">Segmentos de vídeo comprimidos</div>
-      <div class="data-desc">Arquivos binários codificados com AV1 ou H.265. A compressão reduz o tamanho em ~50% frente ao H.264 sem perda perceptível de qualidade, economizando largura de banda e custos de CDN.</div>
-      <div class="data-bar"><div class="data-bar-fill" style="width:90%"></div></div>
-    </div>
-    <div class="data-card">
-      <div class="data-card-header">
-        <div class="data-type-label">Metadados</div>
-        <div class="data-format">JSON / UTF-8</div>
-      </div>
-      <div class="data-name">Catálogo e informações de títulos</div>
-      <div class="data-desc">Título, sinopse, gênero, elenco, duração, miniatura. Armazenados em JSON no ElasticSearch para buscas rápidas de texto completo. UTF-8 garante suporte a 190+ idiomas.</div>
-      <div class="data-bar"><div class="data-bar-fill" style="width:65%"></div></div>
-    </div>
-    <div class="data-card">
-      <div class="data-card-header">
-        <div class="data-type-label">Perfil de usuário</div>
-        <div class="data-format">Relacional / SQL</div>
-      </div>
-      <div class="data-name">Dados de conta e preferências</div>
-      <div class="data-desc">Nome, e-mail (string), senha (hash bcrypt), plano (inteiro/enum), histórico de assistir (array de IDs). Armazenados no MySQL/CockroachDB com transações ACID para garantir consistência.</div>
-      <div class="data-bar"><div class="data-bar-fill" style="width:50%"></div></div>
-    </div>
-    <div class="data-card">
-      <div class="data-card-header">
-        <div class="data-type-label">Comportamento</div>
-        <div class="data-format">Event Stream / Avro</div>
-      </div>
-      <div class="data-name">Telemetria e eventos de reprodução</div>
-      <div class="data-desc">Eventos como play, pause, seek, bitrate_change são serializados em Apache Avro (binário compacto) e transmitidos via Kafka para pipelines de análise em tempo real.</div>
-      <div class="data-bar"><div class="data-bar-fill" style="width:75%"></div></div>
-    </div>
-    <div class="data-card">
-      <div class="data-card-header">
-        <div class="data-type-label">Imagens</div>
-        <div class="data-format">WebP / JPEG</div>
-      </div>
-      <div class="data-name">Miniaturas personalizadas (artwork)</div>
-      <div class="data-desc">A Netflix usa IA para gerar e selecionar qual thumbnail exibir para cada usuário. As imagens são servidas em WebP (30% menor que JPEG) via CDN com múltiplas resoluções (srcset).</div>
-      <div class="data-bar"><div class="data-bar-fill" style="width:40%"></div></div>
-    </div>
-    <div class="data-card">
-      <div class="data-card-header">
-        <div class="data-type-label">Modelo de IA</div>
-        <div class="data-format">Float32 / Tensor</div>
-      </div>
-      <div class="data-name">Vetores de recomendação</div>
-      <div class="data-desc">Cada usuário e título é representado como um vetor de ponto flutuante em alta dimensão. A similaridade cossenoidal entre vetores determina o score de recomendação — processado em GPUs com TensorFlow.</div>
-      <div class="data-bar"><div class="data-bar-fill" style="width:80%"></div></div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- REQUISITOS -->
-<section id="requisitos">
-  <div class="reveal">
-    <div class="section-label">05 — Requisitos Computacionais</div>
-    <h2 class="section-title">Hardware e<br>Desempenho</h2>
-    <p class="section-body">
-      O desempenho da Netflix é diretamente impactado pelo hardware do dispositivo do usuário. CPU, GPU, RAM e conexão de rede determinam a qualidade máxima de reprodução possível.
-    </p>
-  </div>
-
-  <div class="req-container reveal">
-    <div class="req-card">
-      <div class="req-header">
-        <div class="req-label">🔲 Requisitos mínimos (SD · 480p)</div>
-      </div>
-      <div class="req-body">
-        <div class="req-row"><span class="req-key">Processador</span><span class="req-val">1 GHz (single-core)</span></div>
-        <div class="req-row"><span class="req-key">Memória RAM</span><span class="req-val">1 GB</span></div>
-        <div class="req-row"><span class="req-key">Conexão</span><span class="req-val">1 Mbps</span></div>
-        <div class="req-row"><span class="req-key">Armazenamento</span><span class="req-val">~500 MB (app + cache)</span></div>
-        <div class="req-row"><span class="req-key">GPU</span><span class="req-val">Decodificação H.264 via software (CPU)</span></div>
-        <div class="req-row"><span class="req-key">Sistema operacional</span><span class="req-val">Android 5+ / iOS 16+ / Windows 10</span></div>
-      </div>
-    </div>
-    <div class="req-card recommended">
-      <div class="req-header rec-header">
-        <div class="req-label rec">★ Recomendado (4K HDR · UHD)</div>
-      </div>
-      <div class="req-body">
-        <div class="req-row"><span class="req-key">Processador</span><span class="req-val">Intel Core i7 / Apple M1 ou superior</span></div>
-        <div class="req-row"><span class="req-key">Memória RAM</span><span class="req-val">8 GB ou mais</span></div>
-        <div class="req-row"><span class="req-key">Conexão</span><span class="req-val">25 Mbps (estável)</span></div>
-        <div class="req-row"><span class="req-key">Armazenamento</span><span class="req-val">4–8 GB por título baixado em 4K</span></div>
-        <div class="req-row"><span class="req-key">GPU</span><span class="req-val">Decodificação AV1 por hardware (NVIDIA RTX, AMD RX)</span></div>
-        <div class="req-row"><span class="req-key">Tela</span><span class="req-val">4K HDR10 (Dolby Vision para melhor experiência)</span></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Impacto do hardware -->
-  <div class="tech-section reveal" style="margin-top:2rem">
-    <div class="tech-row">
-      <div class="tech-category">CPU</div>
-      <div class="tech-tags">
-        <span class="tag tag-white" style="font-size:12px;padding:6px 14px;white-space:normal;max-width:600px;border-radius:4px">
-          CPUs mais rápidas reduzem o tempo de decodificação de vídeo, diminuem latência no carregamento da interface React e aceleram a renderização de legendas e gráficos. Em dispositivos com CPUs fracas, a Netflix recorre ao H.264 (mais simples de decodificar) em vez de AV1.
+      <div class="cpu-center">
+        <span class="arrow">→</span>
+        <span class="cpu-center-label">CPU<br>+<br>GPU</span>
+        <span class="arrow">→</span>
+        <br>
+        <span class="cpu-center-subtext">
+          Trabalhando juntos<br>para descompactar<br>o vídeo em tempo real
         </span>
       </div>
-    </div>
-    <div class="tech-row">
-      <div class="tech-category">GPU</div>
-      <div class="tech-tags">
-        <span class="tag tag-white" style="font-size:12px;padding:6px 14px;white-space:normal;max-width:600px;border-radius:4px">
-          GPUs com suporte a decodificação por hardware (NVDEC, AMD VCE, Apple Media Engine) liberam a CPU para outras tarefas, reduzem consumo de bateria em 40-60% e permitem reprodução estável de 4K/HDR sem travamentos.
-        </span>
+
+      <div>
+        <div class="cpu-box margin-bottom-sm">
+          <div class="cpu-box-title">Cinema na Tela</div>
+          <div class="cpu-box-sub">O sinal recebido é transformado instantaneamente em imagem de alta definição, áudio
+            sincronizado e legendas sobrepostas.</div>
+        </div>
+        <div class="cpu-box">
+          <div class="cpu-box-title">Dados Otimizados</div>
+          <div class="cpu-box-sub">Gerencia a leitura de arquivos criptografados salvos no aparelho (para assistir
+            offline) e envia relatórios rápidos de estabilidade para a central.</div>
+        </div>
       </div>
     </div>
-    <div class="tech-row">
-      <div class="tech-category">RAM</div>
-      <div class="tech-tags">
-        <span class="tag tag-white" style="font-size:12px;padding:6px 14px;white-space:normal;max-width:600px;border-radius:4px">
-          A RAM armazena o buffer de vídeo (tipicamente 30 segundos à frente) e o estado da interface. Com pouca RAM, o SO força descartes do buffer, causando rebufferizações visíveis ao usuário.
-        </span>
+
+    <!-- <div class="flow reveal" style="margin-top:2rem"> -->
+<div class="timeline-section reveal">
+    
+    <div class="timeline-item">
+      <div class="timeline-num">01</div>
+      <div class="timeline-content">
+        <h3>O Guardião do Portão <span class="tech-term">(API Gateway)</span></h3>
+        <p>Você pressiona o botão. O aplicativo faz um pedido criptografado para o sistema de segurança da Netflix (chamado Zuul). Ele confere se sua assinatura está paga em frações de segundo e libera o acesso ao catálogo.</p>
       </div>
     </div>
-    <div class="tech-row">
-      <div class="tech-category">Rede / E/S</div>
-      <div class="tech-tags">
-        <span class="tag tag-white" style="font-size:12px;padding:6px 14px;white-space:normal;max-width:600px;border-radius:4px">
-          A velocidade de rede é o principal gargalo de qualidade. A Netflix monitora o throughput real a cada 500ms e ajusta a qualidade dinamicamente. Redes instáveis (alta jitter) causam mais downgrade de qualidade do que velocidades baixas e estáveis.
-        </span>
+
+    <div class="timeline-item">
+      <div class="timeline-num">02</div>
+      <div class="timeline-content">
+        <h3>O Entregador Mais Próximo <span class="tech-term">(Playback)</span></h3>
+        <p>A Netflix não envia o vídeo dos EUA para a sua casa. O sistema localiza o computador físico deles (CDN Open Connect) que está instalado dentro da sua própria operadora de internet (Vivo, Claro, etc.) e puxa o filme diretamente da sua cidade.</p>
       </div>
     </div>
+
+    <div class="timeline-item">
+      <div class="timeline-num">03</div>
+      <div class="timeline-content">
+        <h3>O Camaleão Digital <span class="tech-term">(Streaming Adaptativo)</span></h3>
+        <p>Sua internet muda de velocidade o tempo todo. Por isso, os filmes são divididos em pedacinhos de 4 segundos. O sistema testa sua rede a cada segundo: se ela fraquejar, o próximo pedaço é baixado em qualidade menor para não congelar a tela. Quando a internet se estabiliza, o Ultra HD (4K) retorna.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-num">04</div>
+      <div class="timeline-content">
+        <h3>O Tradutor de Alta Velocidade <span class="tech-term">(Decodificação)</span></h3>
+        <p>Os pedaços de filme viajam pela web muito compactados (em formatos chamados AV1 ou H.265) para economizar seus dados. Quando chegam, a GPU (placa de vídeo) do seu aparelho assume o papel de tradutora, abrindo esses arquivos pesados sem esquentar o processador ou descarregar a bateria.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-num">05</div>
+      <div class="timeline-content">
+        <h3>O Algoritmo que Te Conhece <span class="tech-term">(Recomendação)</span></h3>
+        <p>Enquanto você assiste, o app repara se você pausou, avançou ou terminou o episódio. Esses hábitos são enviados de volta para os supercomputadores da Netflix. Lá, ferramentas de inteligência artificial redesenham a sua página inicial para destacar os filmes que mais combinam com você.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- REFERÊNCIAS -->
-<div class="refs" id="referencias">
-  <div class="refs-inner">
-    <h2>Referências</h2>
-    <ol>
-      <li>Netflix Technology Blog. <em>Announcing the Netflix Media Database</em>. 2022. Disponível em: <a href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
-      <li>Netflix Technology Blog. <em>Toward a Better Viewing Experience: Adaptive Streaming in the Netflix App</em>. 2021. Disponível em: <a href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
-      <li>Netflix Technology Blog. <em>AV1 for Netflix Video Streaming</em>. 2020. Disponível em: <a href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
-      <li>IETF / MPEG. <em>MPEG-DASH: Dynamic Adaptive Streaming over HTTP</em>. ISO/IEC 23009-1. Disponível em: <a href="https://www.iso.org" target="_blank">iso.org</a></li>
-      <li>Amazon Web Services. <em>How Netflix uses AWS</em>. Disponível em: <a href="https://aws.amazon.com/solutions/case-studies/netflix/" target="_blank">aws.amazon.com/solutions/case-studies/netflix</a></li>
-      <li>Netflix Help Center. <em>Internet connection speed recommendations</em>. Disponível em: <a href="https://help.netflix.com/pt/node/306" target="_blank">help.netflix.com/pt/node/306</a></li>
-      <li>TANENBAUM, Andrew S.; BOS, Herbert. <em>Modern Operating Systems</em>. 4. ed. Pearson, 2014.</li>
-      <li>SILBERSCHATZ, Abraham; GALVIN, Peter B.; GAGNE, Greg. <em>Operating System Concepts</em>. 10. ed. Wiley, 2018.</li>
-    </ol>
-  </div>
-</div>
+<hr class="divider">
 
-<footer>
-  <span>Netflix</span> — Infoproduto · Introdução à Computação · IFCE Campus Itapipoca · 2025
-</footer>
- <script src="netflix-script.js"></script>
+  <!-- DADOS -->
+  <section id="dados">
+    <div class="reveal">
+      <div class="section-label">04 — Representação e Tipos de Dados</div>
+      <h2 class="section-title">Como os<br>Dados São<br>Tratados</h2>
+      <p class="section-body">
+        A Netflix lida com tipos de dados radicalmente diferentes — de bytes de vídeo comprimido a registros JSON de
+        perfil de usuário — cada um com formato e motivação técnica específica.
+      </p>
+    </div>
+
+    <div class="data-grid reveal">
+      <div class="data-card">
+        <div class="data-card-header">
+          <div class="data-type-label">Vídeo</div>
+          <div class="data-format">Binário / AV1</div>
+        </div>
+        <div class="data-name">Segmentos de vídeo comprimidos</div>
+        <div class="data-desc">Arquivos binários codificados com AV1 ou H.265. A compressão reduz o tamanho em ~50%
+          frente ao H.264 sem perda perceptível de qualidade, economizando largura de banda e custos de CDN.</div>
+        <div class="data-bar">
+          <div class="data-bar-fill" style="width:90%"></div>
+        </div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-header">
+          <div class="data-type-label">Metadados</div>
+          <div class="data-format">JSON / UTF-8</div>
+        </div>
+        <div class="data-name">Catálogo e informações de títulos</div>
+        <div class="data-desc">Título, sinopse, gênero, elenco, duração, miniatura. Armazenados em JSON no ElasticSearch
+          para buscas rápidas de texto completo. UTF-8 garante suporte a 190+ idiomas.</div>
+        <div class="data-bar">
+          <div class="data-bar-fill" style="width:65%"></div>
+        </div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-header">
+          <div class="data-type-label">Perfil de usuário</div>
+          <div class="data-format">Relacional / SQL</div>
+        </div>
+        <div class="data-name">Dados de conta e preferências</div>
+        <div class="data-desc">Nome, e-mail (string), senha (hash bcrypt), plano (inteiro/enum), histórico de assistir
+          (array de IDs). Armazenados no MySQL/CockroachDB com transações ACID para garantir consistência.</div>
+        <div class="data-bar">
+          <div class="data-bar-fill" style="width:50%"></div>
+        </div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-header">
+          <div class="data-type-label">Comportamento</div>
+          <div class="data-format">Event Stream / Avro</div>
+        </div>
+        <div class="data-name">Telemetria e eventos de reprodução</div>
+        <div class="data-desc">Eventos como play, pause, seek, bitrate_change são serializados em Apache Avro (binário
+          compacto) e transmitidos via Kafka para pipelines de análise em tempo real.</div>
+        <div class="data-bar">
+          <div class="data-bar-fill" style="width:75%"></div>
+        </div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-header">
+          <div class="data-type-label">Imagens</div>
+          <div class="data-format">WebP / JPEG</div>
+        </div>
+        <div class="data-name">Miniaturas personalizadas (artwork)</div>
+        <div class="data-desc">A Netflix usa IA para gerar e selecionar qual thumbnail exibir para cada usuário. As
+          imagens são servidas em WebP (30% menor que JPEG) via CDN com múltiplas resoluções (srcset).</div>
+        <div class="data-bar">
+          <div class="data-bar-fill" style="width:40%"></div>
+        </div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-header">
+          <div class="data-type-label">Modelo de IA</div>
+          <div class="data-format">Float32 / Tensor</div>
+        </div>
+        <div class="data-name">Vetores de recomendação</div>
+        <div class="data-desc">Cada usuário e título é representado como um vetor de ponto flutuante em alta dimensão. A
+          similaridade cossenoidal entre vetores determina o score de recomendação — processado em GPUs com TensorFlow.
+        </div>
+        <div class="data-bar">
+          <div class="data-bar-fill" style="width:80%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- REQUISITOS -->
+  <section id="requisitos">
+    <div class="reveal">
+      <div class="section-label">05 — Requisitos Computacionais</div>
+      <h2 class="section-title">Hardware e<br>Desempenho</h2>
+      <p class="section-body">
+        O desempenho da Netflix é diretamente impactado pelo hardware do dispositivo do usuário. CPU, GPU, RAM e conexão
+        de rede determinam a qualidade máxima de reprodução possível.
+      </p>
+    </div>
+
+    <div class="req-container reveal">
+      <div class="req-card">
+        <div class="req-header">
+          <div class="req-label">🔲 Requisitos mínimos (SD · 480p)</div>
+        </div>
+        <div class="req-body">
+          <div class="req-row"><span class="req-key">Processador</span><span class="req-val">1 GHz (single-core)</span>
+          </div>
+          <div class="req-row"><span class="req-key">Memória RAM</span><span class="req-val">1 GB</span></div>
+          <div class="req-row"><span class="req-key">Conexão</span><span class="req-val">1 Mbps</span></div>
+          <div class="req-row"><span class="req-key">Armazenamento</span><span class="req-val">~500 MB (app +
+              cache)</span></div>
+          <div class="req-row"><span class="req-key">GPU</span><span class="req-val">Decodificação H.264 via software
+              (CPU)</span></div>
+          <div class="req-row"><span class="req-key">Sistema operacional</span><span class="req-val">Android 5+ / iOS
+              16+ / Windows 10</span></div>
+        </div>
+      </div>
+      <div class="req-card recommended">
+        <div class="req-header rec-header">
+          <div class="req-label rec">★ Recomendado (4K HDR · UHD)</div>
+        </div>
+        <div class="req-body">
+          <div class="req-row"><span class="req-key">Processador</span><span class="req-val">Intel Core i7 / Apple M1 ou
+              superior</span></div>
+          <div class="req-row"><span class="req-key">Memória RAM</span><span class="req-val">8 GB ou mais</span></div>
+          <div class="req-row"><span class="req-key">Conexão</span><span class="req-val">25 Mbps (estável)</span></div>
+          <div class="req-row"><span class="req-key">Armazenamento</span><span class="req-val">4–8 GB por título baixado
+              em 4K</span></div>
+          <div class="req-row"><span class="req-key">GPU</span><span class="req-val">Decodificação AV1 por hardware
+              (NVIDIA RTX, AMD RX)</span></div>
+          <div class="req-row"><span class="req-key">Tela</span><span class="req-val">4K HDR10 (Dolby Vision para melhor
+              experiência)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Impacto do hardware -->
+    <div class="tech-section reveal" style="margin-top:2rem">
+      <div class="tech-row">
+        <div class="tech-category">CPU</div>
+        <div class="tech-tags">
+          <span class="tag tag-white"
+            style="font-size:12px;padding:6px 14px;white-space:normal;max-width:600px;border-radius:4px">
+            CPUs mais rápidas reduzem o tempo de decodificação de vídeo, diminuem latência no carregamento da interface
+            React e aceleram a renderização de legendas e gráficos. Em dispositivos com CPUs fracas, a Netflix recorre
+            ao H.264 (mais simples de decodificar) em vez de AV1.
+          </span>
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-category">GPU</div>
+        <div class="tech-tags">
+          <span class="tag tag-white"
+            style="font-size:12px;padding:6px 14px;white-space:normal;max-width:600px;border-radius:4px">
+            GPUs com suporte a decodificação por hardware (NVDEC, AMD VCE, Apple Media Engine) liberam a CPU para outras
+            tarefas, reduzem consumo de bateria em 40-60% e permitem reprodução estável de 4K/HDR sem travamentos.
+          </span>
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-category">RAM</div>
+        <div class="tech-tags">
+          <span class="tag tag-white"
+            style="font-size:12px;padding:6px 14px;white-space:normal;max-width:600px;border-radius:4px">
+            A RAM armazena o buffer de vídeo (tipicamente 30 segundos à frente) e o estado da interface. Com pouca RAM,
+            o SO força descartes do buffer, causando rebufferizações visíveis ao usuário.
+          </span>
+        </div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-category">Rede / E/S</div>
+        <div class="tech-tags">
+          <span class="tag tag-white"
+            style="font-size:12px;padding:6px 14px;white-space:normal;max-width:600px;border-radius:4px">
+            A velocidade de rede é o principal gargalo de qualidade. A Netflix monitora o throughput real a cada 500ms e
+            ajusta a qualidade dinamicamente. Redes instáveis (alta jitter) causam mais downgrade de qualidade do que
+            velocidades baixas e estáveis.
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERÊNCIAS -->
+  <div class="refs" id="referencias">
+    <div class="refs-inner">
+      <h2>Referências</h2>
+      <ol>
+        <li>Netflix Technology Blog. <em>Announcing the Netflix Media Database</em>. 2022. Disponível em: <a
+            href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
+        <li>Netflix Technology Blog. <em>Toward a Better Viewing Experience: Adaptive Streaming in the Netflix App</em>.
+          2021. Disponível em: <a href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
+        <li>Netflix Technology Blog. <em>AV1 for Netflix Video Streaming</em>. 2020. Disponível em: <a
+            href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
+        <li>IETF / MPEG. <em>MPEG-DASH: Dynamic Adaptive Streaming over HTTP</em>. ISO/IEC 23009-1. Disponível em: <a
+            href="https://www.iso.org" target="_blank">iso.org</a></li>
+        <li>Amazon Web Services. <em>How Netflix uses AWS</em>. Disponível em: <a
+            href="https://aws.amazon.com/solutions/case-studies/netflix/"
+            target="_blank">aws.amazon.com/solutions/case-studies/netflix</a></li>
+        <li>Netflix Help Center. <em>Internet connection speed recommendations</em>. Disponível em: <a
+            href="https://help.netflix.com/pt/node/306" target="_blank">help.netflix.com/pt/node/306</a></li>
+        <li>TANENBAUM, Andrew S.; BOS, Herbert. <em>Modern Operating Systems</em>. 4. ed. Pearson, 2014.</li>
+        <li>SILBERSCHATZ, Abraham; GALVIN, Peter B.; GAGNE, Greg. <em>Operating System Concepts</em>. 10. ed. Wiley,
+          2018.</li>
+      </ol>
+    </div>
+  </div>
+
+  <footer>
+    <span>Netflix</span> — Infoproduto · Introdução à Computação · IFCE Campus Itapipoca · 2025
+  </footer>
+  <script src="netflix-script.js"></script>
 </body>
+
 </html>
