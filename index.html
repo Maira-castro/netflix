@@ -71,19 +71,21 @@
     <div class="app-grid reveal">
       <div class="app-card">
         <div class="app-card-title">1. Finalidade e Modelo de Negócio</div>
-        <div class="app-card-value">Plataforma de streaming de vídeo sob demanda (Over-The-Top / OTT) operada via modelo
-          de assinatura (SVOD). O catálogo é composto por uma estratégia híbrida de licenciamento de estúdios terceiros
-          e produções originais em escala global.</div>
+        <div class="app-card-value">A Netflix é uma plataforma de streaming de vídeo sob demanda (VOD) baseada em
+          assinatura mensal (SVOD). Seu catálogo combina licenciamento de conteúdo de estúdios terceiros com produções
+          originais próprias, distribuídas globalmente.</div>
       </div>
       <div class="app-card">
         <div class="app-card-title">2. Público-Alvo e Segmentação</div>
-        <div class="app-card-value">Consumidores de entretenimento digital de perfil demográfico amplo (todas as
-          idades), segmentados globalmente por meio de preferências comportamentais e hábitos de consumo,
-          independentemente da localização geográfica.</div>
+        <div class="app-card-value">Atende consumidores de todas as idades e regiões. A segmentação não é demográfica
+          rígida — a plataforma usa o comportamento de cada usuário (histórico, tempo de visualização, buscas) para
+          personalizar a experiência individualmente.</div>
       </div>
       <div class="app-card">
         <div class="app-card-title">3. Ecossistema de Aplicação</div>
-        <div class="app-card-value">Plataforma híbrida: web (SPA), mobile (iOS/Android), desktop, smart TV e consoles
+        <div class="app-card-value">Disponível em navegadores web, smartphones (iOS e Android), computadores, smart TVs
+          e consoles de videogame. A interface se adapta a cada dispositivo mantendo a mesma conta e histórico do
+          usuário.
         </div>
       </div>
       <div class="app-card">
@@ -113,12 +115,10 @@
         <div class="tech-category">Linguagens de programação</div>
         <div class="tech-tags">
           <span class="tag tag-red">Java</span>
+          <span class="tag tag-red">JavaScript</span>
           <span class="tag tag-red">Python</span>
-          <span class="tag tag-red">JavaScript / Node.js</span>
           <span class="tag tag-white">Kotlin</span>
-          <span class="tag tag-white">Swift</span>
-          <span class="tag tag-white">C++</span>
-          <span class="tag tag-dim">Scala</span>
+          <span class="tag tag-dim">Swift</span>
         </div>
       </div>
       <div class="tech-row">
@@ -126,7 +126,6 @@
         <div class="tech-tags">
           <span class="tag tag-red">React</span>
           <span class="tag tag-white">Spring Boot</span>
-          <span class="tag tag-white">gRPC</span>
           <span class="tag tag-white">GraphQL</span>
           <span class="tag tag-dim">TensorFlow</span>
           <span class="tag tag-dim">Apache Spark</span>
@@ -135,9 +134,8 @@
       <div class="tech-row">
         <div class="tech-category">Banco de dados</div>
         <div class="tech-tags">
-          <span class="tag tag-red">MySQL / CockroachDB</span>
+          <span class="tag tag-red">CockroachDB</span>
           <span class="tag tag-white">Apache Cassandra</span>
-          <span class="tag tag-white">ElasticSearch</span>
           <span class="tag tag-dim">Redis (cache)</span>
           <span class="tag tag-dim">S3 (vídeos)</span>
         </div>
@@ -148,9 +146,7 @@
           <span class="tag tag-red">Amazon Web Services (AWS)</span>
           <span class="tag tag-white">Open Connect CDN</span>
           <span class="tag tag-white">Kubernetes</span>
-          <span class="tag tag-dim">Docker</span>
           <span class="tag tag-dim">Titus</span>
-          <span class="tag tag-dim">Zuul API Gateway</span>
         </div>
       </div>
       <div class="tech-row">
@@ -158,8 +154,7 @@
         <div class="tech-tags">
           <span class="tag tag-red">DASH (Dynamic Adaptive Streaming)</span>
           <span class="tag tag-white">HLS</span>
-          <span class="tag tag-white">HTTPS/TLS 1.3</span>
-          <span class="tag tag-dim">WebSocket</span>
+          <span class="tag tag-dim">HTTPS/TLS 1.3</span>
         </div>
       </div>
       <div class="tech-row">
@@ -167,7 +162,6 @@
         <div class="tech-tags">
           <span class="tag tag-red">AV1</span>
           <span class="tag tag-white">H.264 (AVC)</span>
-          <span class="tag tag-white">H.265 (HEVC)</span>
           <span class="tag tag-dim">VP9</span>
         </div>
       </div>
@@ -227,52 +221,62 @@
     </div>
 
     <!-- <div class="flow reveal" style="margin-top:2rem"> -->
-<div class="timeline-section reveal">
-    
-    <div class="timeline-item">
-      <div class="timeline-num">01</div>
-      <div class="timeline-content">
-        <h3>O Guardião do Portão <span class="tech-term">(API Gateway)</span></h3>
-        <p>Você pressiona o botão. O aplicativo faz um pedido criptografado para o sistema de segurança da Netflix (chamado Zuul). Ele confere se sua assinatura está paga em frações de segundo e libera o acesso ao catálogo.</p>
+    <div class="timeline-section reveal">
+
+      <div class="timeline-item">
+        <div class="timeline-num">01</div>
+        <div class="timeline-content">
+          <h3>O guardião do portão <span class="tech-term">(API Gateway)</span></h3>
+          <p>Você pressiona o botão. O aplicativo faz um pedido criptografado para o sistema de segurança da Netflix
+            (chamado Zuul). Ele confere se sua assinatura está paga em frações de segundo e libera o acesso ao catálogo.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="timeline-num">02</div>
-      <div class="timeline-content">
-        <h3>O Entregador Mais Próximo <span class="tech-term">(Playback)</span></h3>
-        <p>A Netflix não envia o vídeo dos EUA para a sua casa. O sistema localiza o computador físico deles (CDN Open Connect) que está instalado dentro da sua própria operadora de internet (Vivo, Claro, etc.) e puxa o filme diretamente da sua cidade.</p>
+      <div class="timeline-item">
+        <div class="timeline-num">02</div>
+        <div class="timeline-content">
+          <h3>O entregador mais próximo <span class="tech-term">(Playback)</span></h3>
+          <p>A Netflix não envia o vídeo dos EUA para a sua casa. O sistema localiza o computador físico deles (CDN Open
+            Connect) que está instalado dentro da sua própria operadora de internet (Vivo, Claro, etc.) e puxa o filme
+            diretamente da sua cidade.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="timeline-num">03</div>
-      <div class="timeline-content">
-        <h3>O Camaleão Digital <span class="tech-term">(Streaming Adaptativo)</span></h3>
-        <p>Sua internet muda de velocidade o tempo todo. Por isso, os filmes são divididos em pedacinhos de 4 segundos. O sistema testa sua rede a cada segundo: se ela fraquejar, o próximo pedaço é baixado em qualidade menor para não congelar a tela. Quando a internet se estabiliza, o Ultra HD (4K) retorna.</p>
+      <div class="timeline-item">
+        <div class="timeline-num">03</div>
+        <div class="timeline-content">
+          <h3>O camaleão digital <span class="tech-term">(Streaming Adaptativo)</span></h3>
+          <p>Sua internet muda de velocidade o tempo todo. Por isso, os filmes são divididos em pedacinhos de 4
+            segundos. O sistema testa sua rede a cada segundo: se ela fraquejar, o próximo pedaço é baixado em qualidade
+            menor para não congelar a tela. Quando a internet se estabiliza, o Ultra HD (4K) retorna.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="timeline-num">04</div>
-      <div class="timeline-content">
-        <h3>O Tradutor de Alta Velocidade <span class="tech-term">(Decodificação)</span></h3>
-        <p>Os pedaços de filme viajam pela web muito compactados (em formatos chamados AV1 ou H.265) para economizar seus dados. Quando chegam, a GPU (placa de vídeo) do seu aparelho assume o papel de tradutora, abrindo esses arquivos pesados sem esquentar o processador ou descarregar a bateria.</p>
+      <div class="timeline-item">
+        <div class="timeline-num">04</div>
+        <div class="timeline-content">
+          <h3>O tradutor de alta velocidade <span class="tech-term">(Decodificação)</span></h3>
+          <p>Os pedaços de filme viajam pela web muito compactados (em formatos chamados AV1 ou H.265) para economizar
+            seus dados. Quando chegam, a GPU (placa de vídeo) do seu aparelho assume o papel de tradutora, abrindo esses
+            arquivos pesados sem esquentar o processador ou descarregar a bateria.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="timeline-num">05</div>
-      <div class="timeline-content">
-        <h3>O Algoritmo que Te Conhece <span class="tech-term">(Recomendação)</span></h3>
-        <p>Enquanto você assiste, o app repara se você pausou, avançou ou terminou o episódio. Esses hábitos são enviados de volta para os supercomputadores da Netflix. Lá, ferramentas de inteligência artificial redesenham a sua página inicial para destacar os filmes que mais combinam com você.</p>
+      <div class="timeline-item">
+        <div class="timeline-num">05</div>
+        <div class="timeline-content">
+          <h3>O algoritmo que te conhece <span class="tech-term">(Recomendação)</span></h3>
+          <p>Enquanto você assiste, o app repara se você pausou, avançou ou terminou o episódio. Esses hábitos são
+            enviados de volta para os supercomputadores da Netflix. Lá, ferramentas de inteligência artificial
+            redesenham a sua página inicial para destacar os filmes que mais combinam com você.</p>
+        </div>
       </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
-
-<hr class="divider">
+  <hr class="divider">
 
   <!-- DADOS -->
   <section id="dados">
@@ -464,28 +468,23 @@
     <div class="refs-inner">
       <h2>Referências</h2>
       <ol>
-        <li>Netflix Technology Blog. <em>Announcing the Netflix Media Database</em>. 2022. Disponível em: <a
-            href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
-        <li>Netflix Technology Blog. <em>Toward a Better Viewing Experience: Adaptive Streaming in the Netflix App</em>.
-          2021. Disponível em: <a href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
-        <li>Netflix Technology Blog. <em>AV1 for Netflix Video Streaming</em>. 2020. Disponível em: <a
-            href="https://netflixtechblog.com" target="_blank">netflixtechblog.com</a></li>
-        <li>IETF / MPEG. <em>MPEG-DASH: Dynamic Adaptive Streaming over HTTP</em>. ISO/IEC 23009-1. Disponível em: <a
-            href="https://www.iso.org" target="_blank">iso.org</a></li>
-        <li>Amazon Web Services. <em>How Netflix uses AWS</em>. Disponível em: <a
-            href="https://aws.amazon.com/solutions/case-studies/netflix/"
-            target="_blank">aws.amazon.com/solutions/case-studies/netflix</a></li>
-        <li>Netflix Help Center. <em>Internet connection speed recommendations</em>. Disponível em: <a
-            href="https://help.netflix.com/pt/node/306" target="_blank">help.netflix.com/pt/node/306</a></li>
-        <li>TANENBAUM, Andrew S.; BOS, Herbert. <em>Modern Operating Systems</em>. 4. ed. Pearson, 2014.</li>
-        <li>SILBERSCHATZ, Abraham; GALVIN, Peter B.; GAGNE, Greg. <em>Operating System Concepts</em>. 10. ed. Wiley,
-          2018.</li>
+        <li>NETFLIX. <em>Netflix Tech Blog</em>. Disponível em: <a href="https://netflixtechblog.com"
+            target="_blank">netflixtechblog.com</a></li>
+
+        <li>AMAZON WEB SERVICES. <em>Netflix on AWS</em>. Disponível em: <a
+            href="https://aws.amazon.com/solutions/case-studies/netflix/" target="_blank">aws.amazon.com</a></li>
+
+        <li>NETFLIX. <em>Open Connect</em>. Disponível em: <a href="https://openconnect.netflix.com"
+            target="_blank">openconnect.netflix.com</a></li>
+
+        <li>NETFLIX. <em>About Netflix</em>. Disponível em: <a href="https://about.netflix.com/pt_br/leadership"
+            target="_blank">about.netflix.com</a></li>
       </ol>
     </div>
   </div>
 
   <footer>
-    <span>Netflix</span> — Infoproduto · Introdução à Computação · IFCE Campus Itapipoca · 2025
+    <span>Netflix</span> — Infoproduto · Introdução à Computação · IFCE Campus Itapipoca · 2026
   </footer>
   <script src="netflix-script.js"></script>
 </body>
