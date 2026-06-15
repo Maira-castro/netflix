@@ -170,6 +170,7 @@
 
   <hr class="divider">
 
+  <!-- Lídia -->
   <!-- FUNCIONAMENTO -->
   <section id="funcionamento">
     <div class="reveal">
@@ -181,19 +182,25 @@
       </p>
     </div>
 
-    <!-- CPU/Memória diagram -->
+    <!-- Diagrama -->
     <div class="cpu-diagram reveal">
+
       <div>
         <div class="cpu-box margin-bottom-sm">
           <div class="cpu-box-title">Aperte o Play</div>
-          <div class="cpu-box-sub">Quando você clica em um filme ou digita na busca, seu aparelho envia um comando
-            digital seguro (via HTTPS).</div>
+          <div class="cpu-box-sub">Quando você interage com o sistema, um dado bruto é gerado 
+            — um valor isolado, sem significado por si só. Ele é capturado e codificado em 
+            bits para iniciar o processamento.
+          </div>
+
         </div>
         <div class="cpu-box">
           <div class="cpu-box-title">A Zona de Segurança (Buffer)</div>
-          <div class="cpu-box-sub">A memória RAM guarda até 30 segundos de filme à frente na fila. Se a sua internet
-            oscilar, o filme continua rodando sem travar direto da RAM.</div>
+          <div class="cpu-box-sub">A memória RAM guarda os dados organizados à frente 
+            na fila. Se a entrada de novos dados oscilar, o sistema continua processando 
+            os que já foram codificados e armazenados.</div>
         </div>
+
       </div>
 
       <div class="cpu-center">
@@ -202,33 +209,40 @@
         <span class="arrow">→</span>
         <br>
         <span class="cpu-center-subtext">
-          Trabalhando juntos<br>para descompactar<br>o vídeo em tempo real
+          A CPU divide as tarefas e a <br>
+          GPU usa sua memória interna (VRAM)<br> 
+          para transformar os dados do vídeo<br> 
+          em milhões de pixels na tela.
         </span>
       </div>
 
       <div>
         <div class="cpu-box margin-bottom-sm">
           <div class="cpu-box-title">Cinema na Tela</div>
-          <div class="cpu-box-sub">O sinal recebido é transformado instantaneamente em imagem de alta definição, áudio
-            sincronizado e legendas sobrepostas.</div>
+          <div class="cpu-box-sub">O dado processado é transformado em 
+            informação compreensível: texto legível, imagem decodificada 
+            em pixels RGB, áudio reconstituído a partir da amostragem digital.</div>
         </div>
+
         <div class="cpu-box">
           <div class="cpu-box-title">Dados Otimizados</div>
-          <div class="cpu-box-sub">Gerencia a leitura de arquivos criptografados salvos no aparelho (para assistir
-            offline) e envia relatórios rápidos de estabilidade para a central.</div>
+          <div class="cpu-box-sub">Gerencia arquivos codificados em formatos 
+            como MP4, PNG ou UTF-8, salvos com compressão para economizar espaço 
+            e garantir transmissão eficiente pelo sistem</div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="flow reveal" style="margin-top:2rem"> -->
+    <!-- Observações -->
     <div class="timeline-section reveal">
 
       <div class="timeline-item">
         <div class="timeline-num">01</div>
         <div class="timeline-content">
           <h3>O guardião do portão <span class="tech-term">(API Gateway)</span></h3>
-          <p>Você pressiona o botão. O aplicativo faz um pedido criptografado para o sistema de segurança da Netflix
-            (chamado Zuul). Ele confere se sua assinatura está paga em frações de segundo e libera o acesso ao catálogo.
+          <p>o pedido viaja em JSON codificado em UTF-8, um padrão que 
+            representa cada caractere como uma sequência de bits. É codificação 
+            de texto aplicada em tempo real.
           </p>
         </div>
       </div>
@@ -237,9 +251,8 @@
         <div class="timeline-num">02</div>
         <div class="timeline-content">
           <h3>O entregador mais próximo <span class="tech-term">(Playback)</span></h3>
-          <p>A Netflix não envia o vídeo dos EUA para a sua casa. O sistema localiza o computador físico deles (CDN Open
-            Connect) que está instalado dentro da sua própria operadora de internet (Vivo, Claro, etc.) e puxa o filme
-            diretamente da sua cidade.</p>
+          <p>o vídeo no servidor da sua operadora é apenas um arquivo: uma longa cadeia 
+            de bits armazenada em disco, aguardando ser transmitida.</p>
         </div>
       </div>
 
