@@ -170,7 +170,6 @@
 
   <hr class="divider">
 
-  <!-- Lídia -->
   <!-- FUNCIONAMENTO -->
   <section id="funcionamento">
     <div class="reveal">
@@ -188,9 +187,9 @@
       <div>
         <div class="cpu-box margin-bottom-sm">
           <div class="cpu-box-title">Aperte o Play</div>
-          <div class="cpu-box-sub">Quando você interage com o sistema, um dado bruto é gerado 
-            — um valor isolado, sem significado por si só. Ele é capturado e codificado em 
-            bits para iniciar o processamento.
+          <div class="cpu-box-sub">Quando você pressiona play, o app envia uma 
+            requisição à API da Netflix com informações como título, tipo de dispositivo e condições de rede. 
+            Com isso, o sistema determina qual a qualidade recomendada do vídeo.
           </div>
 
         </div>
@@ -240,9 +239,7 @@
         <div class="timeline-num">01</div>
         <div class="timeline-content">
           <h3>O guardião do portão <span class="tech-term">(API Gateway)</span></h3>
-          <p>o pedido viaja em JSON codificado em UTF-8, um padrão que 
-            representa cada caractere como uma sequência de bits. É codificação 
-            de texto aplicada em tempo real.
+          <p>O pedido viaja em JSON e é ele o responsável pelo que acontece depois que você aperta o play.
           </p>
         </div>
       </div>
@@ -251,8 +248,9 @@
         <div class="timeline-num">02</div>
         <div class="timeline-content">
           <h3>O entregador mais próximo <span class="tech-term">(Playback)</span></h3>
-          <p>o vídeo no servidor da sua operadora é apenas um arquivo: uma longa cadeia 
-            de bits armazenada em disco, aguardando ser transmitida.</p>
+          <p>A netflix tem milhares de servidores ao redor do mundo. Com sua própria rede de distribuição,
+          tendo, aproximadamente, mais de 12mil servidores ao redor do mundo, instalados em provedores de internet, 
+          principais centros de internet e pontos geográficos estratégicos.</p>
         </div>
       </div>
 
@@ -262,7 +260,7 @@
           <h3>O camaleão digital <span class="tech-term">(Streaming Adaptativo)</span></h3>
           <p>Sua internet muda de velocidade o tempo todo. Por isso, os filmes são divididos em pedacinhos de 4
             segundos. O sistema testa sua rede a cada segundo: se ela fraquejar, o próximo pedaço é baixado em qualidade
-            menor para não congelar a tela. Quando a internet se estabiliza, o Ultra HD (4K) retorna.</p>
+            menor para não congelar a tela. Quando a internet se estabiliza, a melhor qualidade de acordo com sua tela e plano, são baixados..</p>
         </div>
       </div>
 
@@ -270,7 +268,7 @@
         <div class="timeline-num">04</div>
         <div class="timeline-content">
           <h3>O tradutor de alta velocidade <span class="tech-term">(Decodificação)</span></h3>
-          <p>Os pedaços de filme viajam pela web muito compactados (em formatos chamados AV1 ou H.265) para economizar
+          <p>Os pedaços de filme viajam pela web muito compactados para economizar
             seus dados. Quando chegam, a GPU (placa de vídeo) do seu aparelho assume o papel de tradutora, abrindo esses
             arquivos pesados sem esquentar o processador ou descarregar a bateria.</p>
         </div>
@@ -315,11 +313,6 @@
           <div class="data-bar-fill" style="width:90%"></div>
         </div>
       </div>
-      <div class="data-card">
-        <div class="data-card-header">
-          <div class="data-type-label">Metadados</div>
-          <div class="data-format">JSON / UTF-8</div>
-        </div>
         <div class="data-name">Catálogo e informações de títulos</div>
         <div class="data-desc">Título, sinopse, gênero, elenco, duração, miniatura. Armazenados em JSON no ElasticSearch
           para buscas rápidas de texto completo. UTF-8 garante suporte a 190+ idiomas.</div>
@@ -366,7 +359,7 @@
       <div class="data-card">
         <div class="data-card-header">
           <div class="data-type-label">Modelo de IA</div>
-          <div class="data-format">Float32 / Tensor</div>
+          <div class="data-format">Cria o próprio usando: TensorFlow, PyTorch</div>
         </div>
         <div class="data-name">Vetores de recomendação</div>
         <div class="data-desc">Cada usuário e título é representado como um vetor de ponto flutuante em alta dimensão. A
@@ -406,8 +399,7 @@
               cache)</span></div>
           <div class="req-row"><span class="req-key">GPU</span><span class="req-val">Decodificação H.264 via software
               (CPU)</span></div>
-          <div class="req-row"><span class="req-key">Sistema operacional</span><span class="req-val">Android 5+ / iOS
-              16+ / Windows 10</span></div>
+          <div class="req-row"><span class="req-key">Sistema operacional</span><span class="req-val">Android 5+ / iPadOS 14+ / Windows 10 ou Windows 11</span></div>
         </div>
       </div>
       <div class="req-card recommended">
@@ -418,7 +410,7 @@
           <div class="req-row"><span class="req-key">Processador</span><span class="req-val">Intel Core i7 / Apple M1 ou
               superior</span></div>
           <div class="req-row"><span class="req-key">Memória RAM</span><span class="req-val">8 GB ou mais</span></div>
-          <div class="req-row"><span class="req-key">Conexão</span><span class="req-val">25 Mbps (estável)</span></div>
+          <div class="req-row"><span class="req-key">Conexão</span><span class="req-val">15 Mbps (estável)</span></div>
           <div class="req-row"><span class="req-key">Armazenamento</span><span class="req-val">4–8 GB por título baixado
               em 4K</span></div>
           <div class="req-row"><span class="req-key">GPU</span><span class="req-val">Decodificação AV1 por hardware
@@ -492,6 +484,16 @@
 
         <li>NETFLIX. <em>About Netflix</em>. Disponível em: <a href="https://about.netflix.com/pt_br/leadership"
             target="_blank">about.netflix.com</a></li>
+        <li>NETFLIX. <em>Netflix Help Center — Internet Speeds</em>. Disponível em: <a href="https://help.netflix.com/en/node/306" target="_blank">help.netflix.com</a></li>
+
+        <li>HEGDE, Keerthi. <em>Why Netflix Never Buffers: The Engineering Behind Smooth Streaming</em>. Medium, 2025. Disponível em: <a href="https://medium.com/@keerthihegde516/why-netflix-never-buffers-the-engineering-behind-smooth-streaming-bb1ea0092e25" target="_blank">medium.com</a></li>
+
+        <li>STREAMING MEDIA BLOG. <em>Netflix Says AV1 Codec Now Powers 30% of Netflix VOD Streaming</em>. 2025. Disponível em: <a href="https://www.streamingmediablog.com/2025/12/netflix-av1.html" target="_blank">streamingmediablog.com</a></li>
+
+        <li>STRATOFLOW. <em>Netflix Algorithm: How Netflix Uses AI to Improve Personalization</em>. 2025. Disponível em: <a href="https://stratoflow.com/how-netflix-recommendation-algorithm-work/" target="_blank">stratoflow.com</a></li>
+
+        <li>NETFLIX. <em>Machine Learning Platform — Netflix Research</em>. Disponível em: <a href="https://research.netflix.com/research-area/machine-learning-platform" target="_blank">research.netflix.com</a></li>
+        
       </ol>
     </div>
   </div>
